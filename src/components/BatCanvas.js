@@ -7,7 +7,7 @@ const BatCanvas = ({ user }) => {
 
     const [width, setWidth] = useState(800);
 
-    let fontSize = "250px";
+    let fontSize = "200px";
 
     //funcion que nos pinta
     const draw = (ctx, canvas) => {
