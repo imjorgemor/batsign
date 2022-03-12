@@ -1,11 +1,9 @@
-import Canvas from "./components/Canvas";
-
+import BatScreen from "./components/BatScreen";
 
 function App() {
     return (
         <div className="app">
-            <Canvas />
-         
+            <BatScreen />
         </div>
     );
 }

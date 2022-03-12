@@ -7,8 +7,9 @@ body {
     font-family: "Anton", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 2rem;
+    font-size: 16px;
     font-weight: 600;
+    background-color: #000;
 }
 
 code {
@@ -17,19 +18,133 @@ code {
 }
 
 .app {
-    padding: 40px;
+    color: #dc0026;
+    height: 100vh;
+}
+
+.main {
+    margin: auto;
+    height: 100vh;
+    padding: 0px 15px;
+    background-color: #000;
 }
 
 .cover {
-    border: 1px solid black;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 450px;
+}
+
+.bat-buttons {
+    margin-top: -3rem;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.bat-button {
+    background-color: #4f0404;
+    padding: 0.3rem 1rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    transition: 0.5s all ease;
+}
+
+.bat-button:hover {
+    cursor: pointer;
+    background-color: #be0d0c;
+}
+
+.input {
+    margin: -1rem auto 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input > h1 {
+    font-size: 2rem;
+}
+
+.batinput {
+    padding: 0 0 0.5rem;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: #dc0026;
+    text-align: center;
+    border-bottom: 2px solid #dc0026;
+    width: 100%;
+}
+
+.batinput:focus {
+    outline: none !important;
+}
+
+.footer {
+    padding: 1rem 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.disclaimer > p {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    border-right: 1px solid #dc0026;
+}
+
+.github > img {
+    transition: 0.5s ease;
+}
+
+.github > img:hover {
+    filter: invert(30%);
+}
+
+.trailer-cover {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
-.canvas {
-    border: 1px solid red;
-    background-color: #000;
+.trailer {
+    width: 100%;
+    height: 100%;
+}
+
+.home-button {
+    padding: 1rem;
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 200px;
+}
+
+@media only screen and (min-width: 688px) {
+    .main {
+        width: 500px;
+    }
+
+    .batinput {
+        width: 500px;
+    }
 }
