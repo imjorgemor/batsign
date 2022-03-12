@@ -13,30 +13,17 @@ const BatScreen = () => {
         setToggle(!toggle)
     }
 
-
     return (
-        <>
-            {
-                !toggle
-                    ? <div>
-                        <BatTrailer handleToggle={handleToggle} />
-                    </div>
-                    : <div className='main'>
-                        <section>
-                            <BatCanvas
-                                user={user}
-                            />
-                            <BatForm
-                                user={user}
-                                setUser={setUser}
-                            />
-                        </section>
-                        <footer className="footer">
-                            <BatDisclaimer />
-                        </footer>
-                    </div>
-            }
-        </>
+        <div className='main'>
+            <BatCanvas
+                user={user}
+            />
+            <BatForm
+                user={user}
+                setUser={setUser}
+            />
+            <BatDisclaimer />
+        </div>
     )
 }
 
