@@ -1,8 +1,9 @@
 import { useRef, useEffect } from 'react'
 
-const useCanvas = (draw) => {
+const useCanvas = (draw, image) => {
     //setup canvas ref
     const canvasRef = useRef(null);
+
 
     useEffect(() => {
         // establecemos la referencia
@@ -10,9 +11,7 @@ const useCanvas = (draw) => {
         const context = canvas.getContext('2d');
         //pintamos
         draw(context, canvas);
-        console.log("renderizado")
-    }, [draw])
-
+    }, [draw, image])
     return canvasRef;
 }
 

@@ -1,71 +1,66 @@
-# Getting Started with Create React App
+# BATMAN 2022 NAME GENERATOR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![cover](https://www.thebatmanmovie.net/images/tt_portrait.png)
 
-## Available Scripts
+[BATSIGN](https://batsign.vercel.app/)
 
-In the project directory, you can run:
 
-### `npm start`
+* [About The Project](#about)
+* [Built With](#built-with)
+* [Setup](#setup)
+* [Features](#features)
+* [Roadmap](#roadmap)
+* [Contact](#contact)
+* [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About
 
-### `npm test`
+With The Batman film release would be great to get you name with the batman logo, download and share.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+This project has built with:
+* [React](https://reactjs.org/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Other libraries and dependencies:
+* Google WebFont loader
+* File Saver
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Get a local copy up and run these following simple steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install NPM packages
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+### Auto Batman Name generator
+After introducing yor name in the form will appear at the top of the app your name and a download button.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Canvas HTML API
+The name has been created using the Canvas HTML API. Otherwise is not possible to download elements from the react virtual DOM.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Roadmap
+Generating the name on a canvas HTML element is giving a lot of rendering problems. Next step would be separate the form from the name in different screens but the canvas element does not ge mounted correctly
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [github](https://github.com/imjorgemor)
+* [linkedin](https://www.linkedin.com/in/jorge-mor-reactdev/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# batsign
+## License
+This code is under the [MIT](https://opensource.org/licenses/MIT) license. For the full copyright and license information please view the LICENSE file that was distributed with this source code.

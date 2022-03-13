@@ -6,6 +6,7 @@ import { download } from '../helpers/download';
 const BatCanvas = ({ user }) => {
 
     const [width, setWidth] = useState(800);
+    const [image, setImage] = useState("")
 
     let fontSize = "200px";
 
@@ -22,7 +23,7 @@ const BatCanvas = ({ user }) => {
         ctx.drawImage(
             backgroundImage, width / 2, 25, width, canvas.height + 50
         );
-        console.log(canvas.height)
+
         ctx.globalCompositeOperation = "destination-in";
 
         //set name
@@ -40,10 +41,12 @@ const BatCanvas = ({ user }) => {
         ctx.globalCompositeOperation = "destination-over";
         ctx.fillStyle = "black";
         ctx.fillRect((width) / 2, 0, canvas.width, canvas.height + 50);
+        setImage(ctx)
+        console.log(image)
     };
 
     //setup canvas ref
-    const canvasRef = useCanvas(draw);
+    const canvasRef = useCanvas(draw, image);
 
     return (
         <div className='canvas-cover'>
