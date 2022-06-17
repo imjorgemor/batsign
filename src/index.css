@@ -61,6 +61,17 @@ code {
     height: fit-content;
 }
 
+.clear {
+    position: relative;
+    width: fit-content;
+    float: right;
+    min-width: 150px;
+    margin-left: auto;
+    margin-top: 45px;
+
+}
+
+
 .bat-button:hover {
     cursor: pointer;
     background-color: #be0d0c;

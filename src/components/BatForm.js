@@ -15,6 +15,12 @@ const BatForm = ({ user, setUser, handleToggle }) => {
                     autoComplete="off"
                 />
             </form>
+            {
+                user.length > 0 &&
+                <button className='bat-button clear' onClick={() => setUser("")}>CLEAR</button>
+
+            }
+
         </div>
     )
 }
