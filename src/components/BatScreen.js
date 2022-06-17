@@ -1,20 +1,22 @@
 import { useState } from 'react'
 import BatCanvas from './BatCanvas'
 import BatDisclaimer from './BatDisclaimer';
-import BatForm from './BatForm'
-import BatTrailer from './BatTrailer';
+import BatForm from './BatForm';
+import Spline from '@splinetool/react-spline';
 
 const BatScreen = () => {
 
     const [user, setUser] = useState("");
-    const [toggle, setToggle] = useState(false);
-
-    const handleToggle = () => {
-        setToggle(!toggle)
-    }
 
     return (
         <div className='main'>
+            <div className='bat3ds'>
+                {
+                    user.length === 0 &&
+                    <Spline scene="https://prod.spline.design/nxoiI9Qt9BaQc07A/scene.splinecode" />
+                }
+            </div>
+
             <BatCanvas
                 user={user}
             />
@@ -27,4 +29,4 @@ const BatScreen = () => {
     )
 }
 
-export default BatScreen
+export default BatScreen;
